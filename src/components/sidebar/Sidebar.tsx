@@ -19,7 +19,12 @@ import {
   renderTrack,
   renderView,
 } from 'components/scrollbar/Scrollbar';
-import { Scrollbars } from 'react-custom-scrollbars-2';
+import dynamic from 'next/dynamic';
+
+const Scrollbars = dynamic(
+  () => import('react-custom-scrollbars-2').then((mod) => mod.Scrollbars),
+  { ssr: true },
+);
 
 // Assets
 import { IoMenuOutline } from 'react-icons/io5';
@@ -59,13 +64,7 @@ function Sidebar(props: SidebarProps) {
         overflowX="hidden"
         boxShadow={shadow}
       >
-        {/* @ts-expect-error */}
-        <Scrollbars
-          autoHide
-          renderTrackVertical={renderTrack}
-          renderThumbVertical={renderThumb}
-          renderView={renderView}
-        >
+        <Scrollbars universal={true}>
           <Content routes={routes} />
         </Scrollbars>
       </Box>
@@ -118,12 +117,12 @@ export function SidebarResponsive(props: SidebarResponsiveProps) {
             _hover={{ boxShadow: 'none' }}
           />
           <DrawerBody maxW="285px" px="0rem" pb="0">
-            {/* @ts-expect-error */}
             <Scrollbars
               autoHide
               renderTrackVertical={renderTrack}
               renderThumbVertical={renderThumb}
               renderView={renderView}
+              universal={true}
             >
               <Content routes={routes} />
             </Scrollbars>

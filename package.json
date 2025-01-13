@@ -1,6 +1,6 @@
 {
   "name": "horizon-ui-chakra-nextjs",
-  "version": "2.2.1",
+  "version": "3.0.0",
   "private": true,
   "dependencies": {
     "@chakra-ui/icons": "^2.0.19",
@@ -20,12 +20,12 @@
     "@types/react-dom": "^18.0.6",
     "apexcharts": "^3.35.2",
     "framer-motion": "^4.1.17",
-    "next": "^14.2.5",
-    "react": "18.2.0",
+    "next": "^15.1.4",
+    "react": "^19.0.0-rc.1",
     "react-apexcharts": "^1.4.0",
     "react-calendar": "^3.7.0",
     "react-custom-scrollbars-2": "^4.2.1",
-    "react-dom": "18.2.0",
+    "react-dom": "^19.0.0-rc.1",
     "react-dropzone": "^12.0.4",
     "react-icons": "^4.3.1",
     "react-is": "^18.0.0",
@@ -61,7 +61,7 @@
     "@types/react-calendar": "^3.5.2",
     "@types/react-table": "^7.7.12",
     "eslint": "^8.23.0",
-    "eslint-config-next": "^12.2.5"
+    "eslint-config-next": "^15.1.4"
   },
   "resolutions": {
     "@types/react": "18.0.31",

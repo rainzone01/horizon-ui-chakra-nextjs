@@ -1,6 +1,6 @@
 # [Horizon UI NextJS ⚡️](https://horizon-ui.com/horizon-ui-chakra-nextjs) [![Tweet](https://img.shields.io/twitter/url/http/shields.io.svg?style=social&logo=twitter)](https://twitter.com/intent/tweet?url=https://horizon-ui.com/&text=Check%20Horizon%20UI,%20the%20trendiest%20open-source%20admin%20template%20for%20Chakra%20UI%20&%20React!)
 
-![version](https://img.shields.io/badge/version-2.2.1-blue.svg)
+![version](https://img.shields.io/badge/version-3.0.0-blue.svg)
 ![license](https://img.shields.io/badge/license-MIT-blue.svg)
 [![GitHub issues open](https://img.shields.io/github/issues/horizon-ui/horizon-ui-chakra-nextjs.svg?maxAge=2592000)](https://github.com/horizon-ui/horizon-ui-chakra-nextjs/issues?q=is%3Aopen+is%3Aissue)
 
@@ -9,7 +9,6 @@
 [<img alt="Horizon UI NextJS" src="https://i.ibb.co/mtLkcYL/horizon-ui-nextjs-free.png" /> ](https://github.com/horizon-ui/horizon-ui-chakra-nextjs)
 
 <p>&nbsp;</p>
-
 
 Get started and build your dream web app with Horizon UI NextJS, the most trendiest & innovative Open Source Admin Template for Chakra UI, React & NextJS!
 
@@ -29,9 +28,9 @@ Authentication Pages, Profile and so on. Just choose between a Basic Design or a
 cover and you are good to go!
 
 ### 🎉 [NEW] Horizon UI Components
+
 All the main components from both versions, this will help you to see and interact with all & the latest added components of Horizon (also, new components are on the way, stay tuned)! ⚡️
 <a href="https://horizon-ui.com/components/?ref=readme-horizon-nextjs" target="_blank">See all components</a>
-
 
 ### Documentation
 
@@ -72,8 +71,8 @@ If you want to get inspiration or just show something directly to your clients, 
 
 ### Versions
 
-| Free Version                                                                                                       | PRO Version                                                                                                               |
-| ------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------- |
+| Free Version                                                                                                                       | PRO Version                                                                                                                                           |
+| ---------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------- |
 | [![Horizon UI NextJS](https://i.ibb.co/mtLkcYL/horizon-ui-nextjs-free.png)](https://www.horizon-ui.com/?ref=readme-horizon-nextjs) | [![Horizon UI NextJS PRO](https://i.ibb.co/sPSYxGv/horizon-2-0-pro-presentation-image.png)](https://www.horizon-ui.com/pro?ref=readme-horizon-nextjs) |
 
 ### Figma Version
