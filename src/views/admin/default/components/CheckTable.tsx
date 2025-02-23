@@ -45,7 +45,7 @@ export default function CheckTable(props: { tableData: any }) {
 			),
 			cell: (info: any) => (
 				<Flex align='center'>
-					<Checkbox defaultChecked={info.getValue()[1]} colorScheme='brandScheme' me='10px' />
+					
 					<Text color={textColor} fontSize='sm' fontWeight='700'>
 						{info.getValue()[0]}
 					</Text>
@@ -58,34 +58,36 @@ export default function CheckTable(props: { tableData: any }) {
 				<Text
 					justifyContent='space-between'
 					align='center'
+					alignItems='center'
 					fontSize={{ sm: '10px', lg: '12px' }}
 					color='gray.400'>
-					PROGRESS
+					NUMBER OF VEHICLE PER HOUR
 				</Text>
 			),
 			cell: (info) => (
-				<Text color={textColor} fontSize='sm' fontWeight='700'>
+				<Text color={textColor} fontSize='sm' fontWeight='700' 
+				>
 					{info.getValue()}
 				</Text>
 			)
 		}),
-		columnHelper.accessor('quantity', {
-			id: 'quantity',
-			header: () => (
-				<Text
-					justifyContent='space-between'
-					align='center'
-					fontSize={{ sm: '10px', lg: '12px' }}
-					color='gray.400'>
-					QUANTITY
-				</Text>
-			),
-			cell: (info) => (
-				<Text color={textColor} fontSize='sm' fontWeight='700'>
-					{info.getValue()}
-				</Text>
-			)
-		}),
+		// columnHelper.accessor('quantity', {
+		// 	id: 'quantity',
+		// 	header: () => (
+		// 		<Text
+		// 			justifyContent='space-between'
+		// 			align='center'
+		// 			fontSize={{ sm: '10px', lg: '12px' }}
+		// 			color='gray.400'>
+		// 			QUANTITY
+		// 		</Text>
+		// 	),
+		// 	cell: (info) => (
+		// 		<Text color={textColor} fontSize='sm' fontWeight='700'>
+		// 			{info.getValue()}
+		// 		</Text>
+		// 	)
+		// }),
 		columnHelper.accessor('date', {
 			id: 'date',
 			header: () => (
@@ -94,7 +96,7 @@ export default function CheckTable(props: { tableData: any }) {
 					align='center'
 					fontSize={{ sm: '10px', lg: '12px' }}
 					color='gray.400'>
-					DATE
+					TIME & DATE
 				</Text>
 			),
 			cell: (info) => (
@@ -116,11 +118,15 @@ export default function CheckTable(props: { tableData: any }) {
 		getSortedRowModel: getSortedRowModel(),
 		debugTable: true
 	});
+
+
+
+	
 	return (
 		<Card flexDirection='column' w='100%' px='0px' overflowX={{ sm: 'scroll', lg: 'hidden' }}>
 			<Flex px='25px' mb="8px" justifyContent='space-between' align='center'>
 				<Text color={textColor} fontSize='22px' fontWeight='700' lineHeight='100%'>
-					Check Table
+					Traffic Flow Analysis
 				</Text>
 				<Menu />
 			</Flex>

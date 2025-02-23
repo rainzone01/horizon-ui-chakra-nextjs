@@ -18,7 +18,8 @@ import {
 	MdOutlinePerson,
 	MdOutlineCardTravel,
 	MdOutlineLightbulb,
-	MdOutlineSettings
+	MdOutlineSettings,
+	MdTraffic
 } from 'react-icons/md';
 
 export default function Banner(props: { [x: string]: any }) {
@@ -80,9 +81,9 @@ export default function Banner(props: { [x: string]: any }) {
 					}}
 					mb='10px'>
 					<Flex align='center'>
-						<Icon as={MdOutlinePerson} h='16px' w='16px' me='8px' />
+						<Icon as={MdTraffic} h='16px' w='16px' me='8px' />
 						<Text fontSize='sm' fontWeight='400'>
-							Panel 1
+							Traffic Light 1
 						</Text>
 					</Flex>
 				</MenuItem>
@@ -100,9 +101,9 @@ export default function Banner(props: { [x: string]: any }) {
 					}}
 					mb='10px'>
 					<Flex align='center'>
-						<Icon as={MdOutlineCardTravel} h='16px' w='16px' me='8px' />
+						<Icon as={MdTraffic} h='16px' w='16px' me='8px' />
 						<Text fontSize='sm' fontWeight='400'>
-							Panel 2
+						Traffic Light 2
 						</Text>
 					</Flex>
 				</MenuItem>
@@ -120,9 +121,9 @@ export default function Banner(props: { [x: string]: any }) {
 					}}
 					mb='10px'>
 					<Flex align='center'>
-						<Icon as={MdOutlineLightbulb} h='16px' w='16px' me='8px' />
+						<Icon as={MdTraffic} h='16px' w='16px' me='8px' />
 						<Text fontSize='sm' fontWeight='400'>
-							Panel 3
+						Traffic Light 3
 						</Text>
 					</Flex>
 				</MenuItem>
@@ -139,9 +140,9 @@ export default function Banner(props: { [x: string]: any }) {
 						bg: 'transparent'
 					}}>
 					<Flex align='center'>
-						<Icon as={MdOutlineSettings} h='16px' w='16px' me='8px' />
+						<Icon as={MdTraffic} h='16px' w='16px' me='8px' />
 						<Text fontSize='sm' fontWeight='400'>
-							Panel 4
+						Traffic Light 4
 						</Text>
 					</Flex>
 				</MenuItem>

@@ -1,44 +1,36 @@
-// Chakra imports
-import { Box, Flex, Icon, Text, useColorModeValue } from '@chakra-ui/react';
-import BarChart from 'components/charts/BarChart';
-
-// Custom components
+import { Box, Flex, Text, Button, Switch, VStack, useColorModeValue } from '@chakra-ui/react';
 import Card from 'components/card/Card';
-import { barChartDataDailyTraffic, barChartOptionsDailyTraffic } from 'variables/charts';
 
-// Assets
-import { RiArrowUpSFill } from 'react-icons/ri';
-
-export default function DailyTraffic(props: { [x: string]: any }) {
+export default function Controller(props: { [x: string]: any }) {
 	const { ...rest } = props;
 
 	// Chakra Color Mode
 	const textColor = useColorModeValue('secondaryGray.900', 'white');
+
 	return (
 		<Card alignItems='center' flexDirection='column' w='100%' {...rest}>
 			<Flex justify='space-between' align='start' px='10px' pt='5px' w='100%'>
 				<Flex flexDirection='column' align='start' me='20px'>
-					<Text color='secondaryGray.600' fontSize='sm' fontWeight='500'>
-						Daily Traffic
-					</Text>
-					<Flex align='end'>
-						<Text color={textColor} fontSize='34px' fontWeight='700' lineHeight='100%'>
-							2.579
-						</Text>
-						<Text ms='6px' color='secondaryGray.600' fontSize='sm' fontWeight='500'>
-							Visitors
-						</Text>
-					</Flex>
-				</Flex>
-				<Flex align='center' mt='4px'>
-					<Icon as={RiArrowUpSFill} color='green.500' />
-					<Text color='green.500' fontSize='sm' fontWeight='700'>
-						+2.45%
+					<Text color='white' fontSize='22px' fontWeight='500'>
+						Traffic Light Controller
 					</Text>
 				</Flex>
 			</Flex>
-			<Box h='240px' mt='auto'>
-				<BarChart chartData={barChartDataDailyTraffic} chartOptions={barChartOptionsDailyTraffic} />
+
+			<Button colorScheme='red' mt={4} w='80%'>
+				Turn All Red
+			</Button>
+
+			<Box display='grid' gridTemplateColumns='repeat(2, 1fr)' gap={6} mt={6}>
+				{[...Array(4)].map((_, index) => (
+					<VStack key={index} bg='black' p={4} borderRadius='md' w='120px' h='260px' align='center' justify='center'>
+						<VStack spacing={6}>
+							<Switch size='lg' colorScheme='red' />
+							<Switch size='lg' colorScheme='yellow' />
+							<Switch size='lg' colorScheme='green' />
+						</VStack>
+					</VStack>
+				))}
 			</Box>
 		</Card>
 	);

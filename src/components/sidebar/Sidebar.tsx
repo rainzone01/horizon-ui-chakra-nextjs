@@ -17,7 +17,7 @@ import Content from 'components/sidebar/components/Content';
 import {
   renderThumb,
   renderTrack,
-  renderView,
+  renderView, 
 } from 'components/scrollbar/Scrollbar';
 import dynamic from 'next/dynamic';
 
